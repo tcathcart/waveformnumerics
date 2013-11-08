@@ -1,10 +1,10 @@
 WaveformNumerics  
+================
 Taylor Cathcart  
 11/8/13  
 
 Python script to write data sets for several interesting Physics functions, expressed as series 
 Writes data sets to .txt files which can be pasted into spreadsheet/plotting software  
-================
   
 Top-level functions:  
 write_func(func, res, n, x0, x1, name = None, param1 = None, param2 = None)  
