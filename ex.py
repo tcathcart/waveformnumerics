@@ -1,8 +1,8 @@
 # example calls to defined functions
 # taylor cathcart 11/8/13
 
-from functions import *
-from writers import *
+from functions import square, sawtooth, diffraction, packet
+from writers import write_deriv, write_func
 
 write_func(square, .0002, 50, 0, 10, "square")
 write_func(sawtooth, .0002, 60, 0, 10, "sawtooth")
