@@ -18,10 +18,8 @@ def write(func, res, n, x0, x1, derivs, name, param1, param2):
         name = "deriv" + str(derivs) + "_" + name
     
     # open new files
-    xfilename = name + "_x_values.txt"
-    yfilename = name + "_y_values.txt"
-    xfile = open(xfilename, "w")
-    yfile = open(yfilename, "w")
+    xfile = open(name + "_x_values.txt", "w")
+    yfile = open(name + "_y_values.txt", "w")
     
     # generate value list
     outputlist = getderiv(func, res, n, x0, x1, derivs, param1, param2)
@@ -46,7 +44,7 @@ def write(func, res, n, x0, x1, derivs, name, param1, param2):
 def generate(func, res, n, x0, x1, param1, param2):
     
     #initialize empty list to return
-    size = float(x1 - x0) / res
+    size = (x1 - x0) / res
     retlist = [None] * int(size)
     i = 0
     
